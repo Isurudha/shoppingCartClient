@@ -7,6 +7,8 @@ import SignUp from "./components/signup";
 import SignIn from "./components/signin";
 import NavBar from "./components/navbar";
 import Product from "./components/products";
+import addProduct from "./components/addProduct";
+import updateProduct from "./components/updateProduct";
 axios.defaults.baseURL = "http://localhost:5000/";
 
 ReactDOM.render(
@@ -15,6 +17,8 @@ ReactDOM.render(
     <Route exact path="/" component={Product} />
     <Route exact path="/signup" component={SignUp} />
     <Route exact path="/signin" component={SignIn} />
+    <Route exact path="/addProduct" component={addProduct} />
+    <Route exact path="/updateProduct" component={updateProduct} />
     
     </BrowserRouter>,
   document.getElementById('root')
